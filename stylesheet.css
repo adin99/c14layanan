@@ -1,0 +1,121 @@
+/*  SECTIONS  */
+.section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    font-family: MaisonNeueExtended-Bold, sans-serif;
+    font-size: 40px;
+
+}
+
+h2 {
+    font-family: MaisonNeueExtended-Bold, sans-serif;
+    font-size: 32px;
+}
+
+img {
+    width: 189px;
+    height: 90px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.6%;
+    text-align: center;
+
+}
+
+p {
+    font-size: 1.125rem;
+    font-family: MaisonNeue-Book, sans-serif;
+}
+
+.col p {
+    text-align: center;
+
+
+}
+
+
+.col:first-child {
+    margin-left: 0;
+}
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+    /* For IE 6/7 */
+}
+
+
+
+/*  GRID OF FOUR  */
+.span_1_of_4 {
+    width: 20%;
+    border-style: outset;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 3px 4px #1a7940;
+}
+
+/*  GRID OF THREE  */
+.span_1_of_3 {
+
+    width: 25%;
+    border-style: outset;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 3px 4px #1a7940;
+}
+
+.span_1_of_4:active {
+    box-shadow: none;
+    position: relative;
+    top: 7px;
+}
+
+.span_1_of_3:active {
+    box-shadow: none;
+    position: relative;
+    top: 7px;
+}
+
+/*  GO FULL WIDTH BELOW 1000 PIXELS */
+@media only screen and (max-width: 1000px) {
+    .col {
+        margin: 1% 0 1% 0%;
+    }
+
+    .span_1_of_4,
+    .span_1_of_3 {
+        width: 50%;
+
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .col {
+        margin: 1% 0 1% 0%;
+    }
+
+    .span_1_of_4,
+    .span_1_of_3 {
+        width: 100%;
+
+    }
+}
